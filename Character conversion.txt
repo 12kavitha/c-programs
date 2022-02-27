@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+   char ch;
+   printf("enter a character");
+   scanf("%c",&ch);
+   
+   
+   printf("the given character is %c",ch);
+   if(ch>='A' && ch<='Z')
+   {
+       ch=ch+32;
+       printf("character after conversionn is %c",ch);
+   }
+   else if(ch>='a' && ch<='z')
+   {
+          ch=ch-32;
+       printf("character after conversionn is %c",ch);
+   }
+   else
+   {
+       printf("invallid character");
+   }
+       
+   }
+   
